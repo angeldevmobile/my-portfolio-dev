@@ -1,3 +1,5 @@
+// Contact.tsx
+
 import React, { useState } from 'react';
 
 const Contact: React.FC = () => {
@@ -19,19 +21,18 @@ const Contact: React.FC = () => {
 
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-
+    
         try {
-            const response = await fetch("http://localhost:5000/send-email", {
+            const response = await fetch('/api/send-email', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
                 },
                 body: JSON.stringify(formData),
             });
-
+    
             if (response.ok) {
                 setStatusMessage('Correo enviado exitosamente!');
-                // Limpiar el formulario después de enviar el correo exitosamente
                 setFormData({
                     email: '',
                     name: '',
