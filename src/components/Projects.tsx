@@ -30,7 +30,7 @@ const projects: Projects[] = [
       {
         name: 'Gabriel Zapata',
         photo: colaborator2,
-        github: 'https://github.com/Gabi-code-Dev/IA-DEVELOPER',
+        github: 'https://github.com/ALPHA0101010101001010101010101011010/shopping-econmerce-app',
         linkedin: 'https://www.linkedin.com/in/gabriel-zapata-239501287/',
       },
     ],
@@ -47,11 +47,11 @@ const projects: Projects[] = [
       {
         name: 'Gabriel Zapata',
         photo: colaborator2,
-        github: 'https://github.com/Gabi-code-Dev/IA-DEVELOPER',
+        github: 'https://github.com/ALPHA0101010101001010101010101011010/my-portfolio-dev',
         linkedin: 'https://www.linkedin.com/in/gabriel-zapata-239501287/',
       },
     ],
-    codeUrl: 'https://github.com/project-club-repo',
+    codeUrl: 'https://github.com/ALPHA0101010101001010101010101011010',
   },
   {
     title: 'AI Assistant Virtual',
@@ -64,11 +64,11 @@ const projects: Projects[] = [
       {
         name: 'Gabriel Zapata',
         photo: colaborator2,
-        github: 'https://github.com/Gabi-code-Dev/IA-DEVELOPER',
+        github: 'https://github.com/ALPHA0101010101001010101010101011010',
         linkedin: 'https://www.linkedin.com/in/gabriel-zapata-239501287/',
       },
     ],
-    codeUrl: 'https://github.com/ai-assistant-repo',
+    codeUrl: 'https://github.com/ALPHA0101010101001010101010101011010',
   },
 ];
 

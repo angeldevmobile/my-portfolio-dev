@@ -13,7 +13,7 @@ const Header: React.FC = () => {
           <li><a href="#education" className="text-white hover:text-purple">Education</a></li>
         </ul>
       </nav>
-      <a href="https://github.com/Gabi-code-Dev/IA-DEVELOPER" className="px-4 py-2 text-white border rounded border-purple hover:bg-purple">Github Profile</a>
+      <a href="https://github.com/ALPHA0101010101001010101010101011010" className="px-4 py-2 text-white border rounded border-purple hover:bg-purple">Github Profile</a>
     </header>
   );
 };

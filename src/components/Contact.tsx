@@ -111,7 +111,7 @@ const Contact: React.FC = () => {
                     <div className="flex justify-center space-x-6 text-2xl">
                         <a href="https://facebook.com" className="hover:text-blue-400"><i className="fab fa-facebook"></i></a>
                         <a href="https://twitter.com" className="hover:text-blue-400"><i className="fab fa-twitter"></i></a>
-                        <a href="https://linkedin.com" className="hover:text-blue-400"><i className="fab fa-linkedin"></i></a>
+                        <a href="https://www.linkedin.com/in/gabriel-zapata-239501287/" className="hover:text-blue-400"><i className="fab fa-linkedin"></i></a>
                         <a href="https://instagram.com" className="hover:text-blue-400"><i className="fab fa-instagram"></i></a>
                     </div>
                 </div>

@@ -51,7 +51,7 @@ const HeroSection: React.FC = () => {
           </a>
           <div className="flex justify-center mt-6 space-x-6 md:justify-start">
             <a href="https://www.linkedin.com/in/gabriel-zapata-239501287/" className="text-2xl hover:text-purple"><FaLinkedin /></a>
-            <a href="https://github.com/Gabi-code-Dev/IA-DEVELOPER" className="text-2xl hover:text-purple"><FaGithub /></a>
+            <a href="https://github.com/ALPHA0101010101001010101010101011010" className="text-2xl hover:text-purple"><FaGithub /></a>
             <a href="https://twitter.com" className="text-2xl hover:text-purple"><FaTwitter /></a>
             <a href="https://twitter.com" className="text-2xl hover:text-purple"><FaInstagram /></a>
           </div>
