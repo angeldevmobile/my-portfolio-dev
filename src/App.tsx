@@ -1,26 +1,36 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Header from '../src/components/Header';
+import HeroSection from '../src/components/HeroSection';
+import Footer from '../src/components/Footer';
+import Skills from '../src/components/Habilities';
+import Experience from './components/Experience';
+import Project from './components/Projects';
+import Study from './components/Study';
+import Contact from './components/Contact';
 
-function App() {
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="min-h-screen text-white bg-dark">
+      <Header />
+      <section id="contact me">
+        <HeroSection />
+      </section>
+      <section id="skills">
+        <Skills />
+      </section>
+      <section id="experience">
+        <Experience />
+      </section>
+      <section id="projects">
+        <Project />
+      </section>
+      <section id="education">
+        <Study />
+      </section>
+      <Contact />
+      <Footer />
     </div>
   );
-}
-
+};
 export default App;
+

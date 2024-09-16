@@ -1,0 +1,188 @@
+/* Experience.css */
+
+/* Card container */
+.card-container {
+  position: relative;
+  width: 100%; /* Cambiado a 100% para que ocupe todo el ancho disponible */
+  max-width: 440px; /* Establece un ancho máximo */
+  margin: 40px auto;
+}
+
+/* Línea vertical */
+.vertical-line {
+  position: absolute;
+  top: 0;
+  left: -40px;
+  width: 4px;
+  height: 100%;
+  border-radius: 10px;
+  background: #0719b5;
+  z-index: 0;
+}
+
+/* Estilo del card */
+.e-card {
+  position: relative;
+  background: #011522;
+  box-shadow: 0px 8px 28px -9px rgba(0,0,0,0.45);
+  border-radius: 16px;
+  padding: 20px;
+  overflow: hidden;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease;
+  width: 100%; /* Cambiado a 100% para que ocupe todo el ancho disponible */
+  max-width: 540px; /* Tamaño máximo ajustable */
+  height: auto; /* Para que el alto se ajuste dinámicamente */
+}
+
+/* Efecto hover para el card */
+.e-card:hover {
+  transform: scale(1.05);
+}
+
+/* Estilo del icono dentro del card */
+.experience-icon img {
+  width: 90px;
+  height: 60px;
+  margin-bottom: 10px;
+  border-radius: 100px;
+  background: white;
+  padding: 5px;
+}
+
+/* Información principal (role) */
+.infotop {
+  text-align: center;
+  font-size: 20px;
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/* Detalles del card */
+.experience-details {
+  text-align: left;
+  color: #fff;
+  margin-top: 10px;
+}
+
+/* Nombre de la compañía */
+.company {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* Fecha de experiencia */
+.date {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+/* Contenedor de la descripción con overflow */
+.description-container {
+  max-height: 100px; /* Limita la altura de la descripción para que no se desborde */
+  overflow: hidden; /* Oculta el contenido excedente */
+  text-overflow: ellipsis; /* Agrega puntos suspensivos si el texto es muy largo */
+}
+
+/* Efecto para mostrar más texto al hacer hover */
+.description-container:hover {
+  max-height: none; /* Elimina la restricción de altura */
+  overflow: auto; /* Permite el desplazamiento del contenido */
+}
+
+/* Lista de habilidades */
+.skills {
+  font-weight: bold;
+  font-size: 0.75rem;
+  margin-top: 10px;
+}
+
+/* Estilo de las ondas de fondo */
+.wave {
+  position: absolute;
+  width: 540px;
+  height: 700px;
+  opacity: 0.1;
+  left: 0;
+  top: 0;
+  margin-left: -50%;
+  margin-top: -70%;
+  background: linear-gradient(744deg,#05136b,#5b42f3 60%,#00ddeb);
+  z-index: 0;
+  border-radius: 40%;
+  animation: wave 55s infinite linear;
+}
+
+/* Animaciones para las ondas */
+.wave:nth-child(2),
+.wave:nth-child(3) {
+  top: 210px;
+}
+
+@keyframes wave {
+  0% {
+      transform: rotate(0deg);
+  }
+
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+/* Sección de experiencia */
+.experience-section {
+  text-align: center;
+  padding: 50px;
+  background: linear-gradient(38.73deg, rgba(204, 0, 187, 0.15) 0%, rgba(124, 9, 112, 0) 50%), 
+  linear-gradient(141.27deg, rgba(2, 65, 190, 0) 50%, rgba(10, 53, 141, 0.15) 100%);
+  color: #fff;
+}
+
+/* Título de la sección */
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+/* Descripción general */
+p {
+  margin: 0 auto 40px;
+  max-width: 600px;
+}
+
+/* Lista de experiencias */
+.experience-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+}
+
+/* Estilo general de las tarjetas para pantallas grandes */
+@media (min-width: 768px) {
+  .experience-list {
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: space-around;
+  }
+
+  .card_one {
+      width: 520px;
+  }
+}
+
+/* Estilo general de las tarjetas para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+  .experience-list {
+      flex-direction: column;
+  }
+
+  .card_one {
+      width: 100%; /* Ocupa todo el ancho en pantallas pequeñas */
+  }
+}
