@@ -6,13 +6,17 @@ import backgroundVideo from '../assets/background.mp4';
 const AnimatedText = ({ text }: { text: string }) => {
   return (
     <span>
-      {text.split('').map((letter, index) => (
-        <span
-          key={index}
-          className="inline-block font-bold animate-fade-out-in-letter text-purple"
-          style={{ animationDelay: `${index * 0.1}s` }}
-        >
-          {letter}
+      {text.split(' ').map((word, wordIndex) => (
+        <span key={wordIndex} style={{ marginRight: '0.5em', display: 'inline-block' }}>
+          {word.split('').map((letter, letterIndex) => (
+            <span
+              key={letterIndex}
+              className="inline-block font-bold animate-fade-out-in-letter text-purple"
+              style={{ animationDelay: `${(wordIndex * 10 + letterIndex) * 0.1}s` }}
+            >
+              {letter}
+            </span>
+          ))}
         </span>
       ))}
     </span>
