@@ -38,7 +38,7 @@ const HeroSection: React.FC = () => {
           <img
             src={profilePic}
             alt="Profile"
-            className="w-48 h-48 border-4 border-blue-500 rounded-full md:w-64 md:h-64"
+            className="w-48 h-48 border-4 rounded-full md:w-64 md:h-64"
           />
         </div>
         <div className="text-center md:w-1/2 md:text-left">
@@ -48,7 +48,14 @@ const HeroSection: React.FC = () => {
             I am a <AnimatedText text="Software Developer" />
           </h3>
           <p className="mt-6 text-lg" style={{ marginLeft: '-3px' }}>
-          I am a software developer specialized in creating innovative applications using Flutter and designing modern, responsive websites. My experience covers the development of robust APIs and the integration of artificial intelligence to provide advanced and efficient technological solutions. My focus is on delivering applications that not only meet the highest quality standards but also provide an exceptional user experience. Whether you're looking for a high-performance mobile app or an interactive website, I'm here to transform your ideas into reality.
+            <div style={{
+              backgroundColor: 'rgba(0, 0, 0, 0.6)', // Fondo negro semitransparente
+              padding: '10px',  // Espaciado interno
+              borderRadius: '8px',  // Bordes redondeados
+              color: '#fff', // Color del texto
+            }}>
+              I am a software developer specialized in creating innovative applications using Flutter and designing modern, responsive websites. My experience covers the development of robust APIs and the integration of artificial intelligence to provide advanced and efficient technological solutions. My focus is on delivering applications that not only meet the highest quality standards but also provide an exceptional user experience. Whether you're looking for a high-performance mobile app or an interactive website, I'm here to transform your ideas into reality.
+            </div>
           </p>
           <a href="#contact" className="inline-block px-6 py-3 mt-8 text-white rounded-lg bg-purple hover:bg-white hover:text-purple">
             Connect with Me
