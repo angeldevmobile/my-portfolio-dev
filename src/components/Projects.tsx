@@ -34,7 +34,7 @@ const projects: Projects[] = [
         linkedin: 'https://www.linkedin.com/in/gabriel-zapata-239501287/',
       },
     ],
-    codeUrl: 'https://github.com/project-repo',
+    codeUrl: 'https://github.com/ALPHA0101010101001010101010101011010/shopping-econmerce-app',
   },
   {
     title: 'Portfolio and Web E-conmerce',
@@ -51,7 +51,7 @@ const projects: Projects[] = [
         linkedin: 'https://www.linkedin.com/in/gabriel-zapata-239501287/',
       },
     ],
-    codeUrl: 'https://github.com/ALPHA0101010101001010101010101011010',
+    codeUrl: 'https://github.com/ALPHA0101010101001010101010101011010/my-portfolio-dev',
   },
   {
     title: 'AI Assistant Virtual',
