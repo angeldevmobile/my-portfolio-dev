@@ -32,7 +32,7 @@ const Skills: React.FC = () => {
       }}>
       <h2 className="mb-6 text-4xl font-bold text-center">Skills</h2>
       <p className="mb-12 text-center">
-          Here are some of my skills that I have been working on over the past few years as a developer.
+        Here are some of my skills that I have been working on over the past few years as a developer.
       </p>
       <div className="flex flex-wrap items-start justify-center gap-12">
         <div className="card">
@@ -40,91 +40,116 @@ const Skills: React.FC = () => {
             <h3 className="mb-4 text-2xl font-semibold text-center">
               Frontend
             </h3>
-            <div className="grid grid-cols-3 gap-4">
-              <div className="bg-[#1f1f1f] p-3 rounded text-center">
-                <FaReact className="inline-block text-blue-500" /> React Js
+            <div className="grid grid-cols-3 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              <div className="max-w-xs p-2 mx-auto text-center rounded puff-in-center">
+                <FaReact className="block mx-auto text-4xl text-blue-500" />
+                <span className="block text-sm sm:text-base lg:text-lg">React Js</span>
               </div>
-              <div className="bg-[#1f1f1f] p-3 rounded text-center">
-                <SiFlutter className="inline-block text-blue-600" /> Flutter
+              <div className="max-w-xs p-2 mx-auto text-center rounded puff-in-center">
+                <SiFlutter className="block mx-auto text-4xl text-blue-600" />
+                <span className="block text-sm sm:text-base lg:text-lg">Flutter</span>
               </div>
-              <div className="bg-[#1f1f1f] p-3 rounded text-center">
-                <SiTailwindcss className="inline-block text-blue-400" /> Tailwind
-                CSS
+              <div className="max-w-xs p-2 mx-auto text-center rounded puff-in-center">
+                <SiTailwindcss className="block mx-auto text-4xl text-blue-400" />
+                <span className="block text-sm sm:text-base lg:text-lg">Tailwind CSS</span>
               </div>
-              <div className="bg-[#1f1f1f] p-3 rounded text-center">
-                <SiHtml5 className="inline-block text-orange-500" /> HTML
+              <div className="max-w-xs p-2 mx-auto text-center rounded puff-in-center">
+                <SiHtml5 className="block mx-auto text-4xl text-orange-500" />
+                <span className="block text-sm sm:text-base lg:text-lg">HTML</span>
               </div>
-              <div className="bg-[#1f1f1f] p-3 rounded text-center">
-                <SiCss3 className="inline-block text-blue-600" /> CSS
+              <div className="max-w-xs p-2 mx-auto text-center rounded puff-in-center">
+                <SiCss3 className="block mx-auto text-4xl text-blue-600" />
+                <span className="block text-sm sm:text-base lg:text-lg">CSS</span>
               </div>
-              <div className="bg-[#1f1f1f] p-3 rounded text-center">
-                <SiJavascript className="inline-block text-yellow-500" /> JavaScript
+              <div className="max-w-xs p-2 mx-auto text-center rounded puff-in-center">
+                <SiJavascript className="block mx-auto text-4xl text-yellow-500" />
+                <span className="block text-sm sm:text-base lg:text-lg">JavaScript</span>
               </div>
-              <div className="bg-[#1f1f1f] p-3 rounded text-center">
-                <SiBootstrap className="inline-block text-purple-700" /> Bootstrap
+              <div className="max-w-xs p-2 mx-auto text-center rounded puff-in-center">
+                <SiBootstrap className="block mx-auto text-4xl text-purple-700" />
+                <span className="block text-sm sm:text-base lg:text-lg">Bootstrap</span>
               </div>
             </div>
           </div>
         </div>
+
+        {/* Backend Section */}
         <div className="card">
           <div className="p-6 border card__content rounded-xl border-purple">
             <h3 className="mb-4 text-2xl font-semibold text-center">
               Backend
             </h3>
-            <div className="grid grid-cols-3 gap-4">
-              <div className="bg-[#1f1f1f] p-3 rounded text-center">
-                <FaNodeJs className="inline-block text-green-500" /> Node Js
+            <div className="grid grid-cols-3 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              <div className="max-w-xs p-2 mx-auto text-center rounded puff-in-center">
+                <FaNodeJs className="block mx-auto text-4xl text-green-500" />
+                <span className="block text-sm sm:text-base lg:text-lg">Node Js</span>
               </div>
-              <div className="bg-[#1f1f1f] p-3 rounded text-center">
-                <SiExpress className="inline-block text-gray-500" /> Express Js
+              <div className="max-w-xs p-2 mx-auto text-center rounded puff-in-center">
+                <SiExpress className="block mx-auto text-4xl text-gray-500" />
+                <span className="block text-sm sm:text-base lg:text-lg">Express Js</span>
               </div>
-              <div className="bg-[#1f1f1f] p-3 rounded text-center">
-                <SiPython className="inline-block text-yellow-400" /> Python
+              <div className="max-w-xs p-2 mx-auto text-center rounded puff-in-center">
+                <SiPython className="block mx-auto text-4xl text-yellow-400" />
+                <span className="block text-sm sm:text-base lg:text-lg">Python</span>
               </div>
-              <div className="bg-[#1f1f1f] p-3 rounded text-center">
-                <SiMysql className="inline-block text-blue-500" /> MySQL
+              <div className="max-w-xs p-2 mx-auto text-center rounded puff-in-center">
+                <SiMysql className="block mx-auto text-4xl text-blue-500" />
+                <span className="block text-sm sm:text-base lg:text-lg">MySQL</span>
               </div>
-              <div className="bg-[#1f1f1f] p-3 rounded text-center">
-                <SiMongodb className="inline-block text-green-500" /> MongoDB
+              <div className="max-w-xs p-2 mx-auto text-center rounded puff-in-center">
+                <SiMongodb className="block mx-auto text-4xl text-green-500" />
+                <span className="block text-sm sm:text-base lg:text-lg">MongoDB</span>
               </div>
-              <div className="bg-[#1f1f1f] p-3 rounded text-center">
-                <SiFirebase className="inline-block text-yellow-500" /> Firebase
+              <div className="max-w-xs p-2 mx-auto text-center rounded puff-in-center">
+                <SiFirebase className="block mx-auto text-4xl text-yellow-500" />
+                <span className="block text-sm sm:text-base lg:text-lg">Firebase</span>
               </div>
-              <div className="bg-[#1f1f1f] p-3 rounded text-center">
-                <SiSpringboot className="inline-block text-green-500" /> Spring Boot
+              <div className="max-w-xs p-2 mx-auto text-center rounded puff-in-center">
+                <SiSpringboot className="block mx-auto text-4xl text-green-500" />
+                <span className="block text-sm sm:text-base lg:text-lg">Spring Boot</span>
               </div>
             </div>
           </div>
         </div>
+
+        {/* Others Section */}
         <div className="card">
           <div className="p-6 border card__content rounded-xl border-purple">
             <h3 className="mb-4 text-2xl font-semibold text-center">
               Others
             </h3>
-            <div className="grid grid-cols-3 gap-4">
-              <div className="bg-[#1f1f1f] p-3 rounded text-center">
-                <FaGithub className="inline-block text-white" /> GitHub
+            <div className="grid grid-cols-3 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              <div className="max-w-xs p-2 mx-auto text-center rounded puff-in-center">
+                <FaGithub className="block mx-auto text-4xl text-white" />
+                <span className="block text-sm sm:text-base lg:text-lg">GitHub</span>
               </div>
-              <div className="bg-[#1f1f1f] p-3 rounded text-center">
-                <SiCanva className="inline-block text-blue-500" /> Canva
+              <div className="max-w-xs p-2 mx-auto text-center rounded puff-in-center">
+                <SiCanva className="block mx-auto text-4xl text-blue-500" />
+                <span className="block text-sm sm:text-base lg:text-lg">Canva</span>
               </div>
-              <div className="bg-[#1f1f1f] p-3 rounded text-center">
-                <SiNetlify className="inline-block text-blue-500" /> Netlify
+              <div className="max-w-xs p-2 mx-auto text-center rounded puff-in-center">
+                <SiNetlify className="block mx-auto text-4xl text-blue-500" />
+                <span className="block text-sm sm:text-base lg:text-lg">Netlify</span>
               </div>
-              <div className="bg-[#1f1f1f] p-3 rounded text-center">
-                <SiVisualstudiocode className="inline-block text-blue-600" /> VS Code
+              <div className="max-w-xs p-2 mx-auto text-center rounded puff-in-center">
+                <SiVisualstudiocode className="block mx-auto text-4xl text-blue-600" />
+                <span className="block text-sm sm:text-base lg:text-lg">VS Code</span>
               </div>
-              <div className="bg-[#1f1f1f] p-3 rounded text-center">
-                <SiPostman className="inline-block text-orange-500" /> Postman
+              <div className="max-w-xs p-2 mx-auto text-center rounded puff-in-center">
+                <SiPostman className="block mx-auto text-4xl text-orange-500" />
+                <span className="block text-sm sm:text-base lg:text-lg">Postman</span>
               </div>
-              <div className="bg-[#1f1f1f] p-3 rounded text-center">
-                <SiIntellijidea className="inline-block text-white" /> IntelliJ Idea
+              <div className="max-w-xs p-2 mx-auto text-center rounded puff-in-center">
+                <SiIntellijidea className="block mx-auto text-4xl text-white" />
+                <span className="block text-sm sm:text-base lg:text-lg">IntelliJ Idea</span>
               </div>
-              <div className="bg-[#1f1f1f] p-3 rounded text-center">
-                <SiFigma className="inline-block text-red-500" /> Figma
+              <div className="max-w-xs p-2 mx-auto text-center rounded puff-in-center">
+                <SiFigma className="block mx-auto text-4xl text-red-500" />
+                <span className="block text-sm sm:text-base lg:text-lg">Figma</span>
               </div>
-              <div className="bg-[#1f1f1f] p-3 rounded text-center">
-                <SiAndroidstudio className="inline-block text-green-500" /> Android Studio
+              <div className="max-w-xs p-2 mx-auto text-center rounded puff-in-center">
+                <SiAndroidstudio className="block mx-auto text-4xl text-green-500" />
+                <span className="block text-sm sm:text-base lg:text-lg">Android Studio</span>
               </div>
             </div>
           </div>
