@@ -1,0 +1,17 @@
+.custom-form {
+        width: 90%; /* Ajustado para ocupar menos espacio */
+        max-width: 500px; /* Reducido el tamaño máximo */
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(23, 23, 33);
+        padding: 32px;
+        border-radius: 16px;
+        box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
+        margin-top: 28px;
+        gap: 12px;
+      }
+      
+      .flex {
+        padding: 16px; /* Ajusta el padding en el contenedor */
+      }
+      

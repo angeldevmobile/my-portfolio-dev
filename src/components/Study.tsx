@@ -10,7 +10,7 @@ const Study = () => {
       <p className="mb-12 text-lg">
         My education has been a journey of self-discovery and growth. My educational details are as follows.
       </p>
-      <div className="flex flex-wrap items-stretch justify-center gap-6">
+      <div className="flex flex-wrap items-stretch justify-center gap-6 p-2.5">
         {/* Card 1: UTP */}
         <a href="https://www.utp.edu.pe/web/" className="w-full max-w-lg p-6 rounded-lg border border-purple-500 bg-[#0f111c] shadow-lg flex-grow block">
           <div className="flex items-start space-x-4">
