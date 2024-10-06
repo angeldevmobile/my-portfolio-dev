@@ -110,3 +110,29 @@
   object-fit: cover;
   border-radius: 20px;
 }
+
+@media (max-width: 768px) {
+  .project-card {
+    max-width: 350px;
+    height: auto; /* Permitir que el contenedor sea dinámico */
+  }
+
+  .container-1 {
+    max-width: 100%; /* Ocupa todo el ancho disponible */
+  }
+
+  .image-1 {
+    height: auto; /* Ajuste proporcional en pantallas pequeñas */
+  }
+}
+
+@media (max-width: 480px) {
+  .projects-grid {
+    flex-direction: column; /* Cambia el layout a columnas */
+    align-items: center; 
+  }
+
+  .project-card {
+    margin: 20px 0; /* Añadir más espacio entre las tarjetas */
+  }
+}

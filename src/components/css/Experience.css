@@ -16,15 +16,15 @@
   width: 4px;
   height: 100%;
   border-radius: 10px;
-  background: #0719b5;
+  background: #00e5ff; /* Cambiado a un color más vibrante */
   z-index: 0;
 }
 
 /* Estilo del card */
 .e-card {
   position: relative;
-  background: #011522;
-  box-shadow: 0px 8px 28px -9px rgba(0,0,0,0.45);
+  background: linear-gradient(145deg, #0d47a1, #42a5f5); /* Fondo con degradado */
+  box-shadow: 0px 8px 28px -9px rgba(0, 229, 255, 0.45); /* Sombra más vibrante */
   border-radius: 16px;
   padding: 20px;
   overflow: hidden;
@@ -57,9 +57,11 @@
 .infotop {
   text-align: center;
   font-size: 20px;
-  color: #fff;
   font-weight: 600;
   margin-bottom: 10px;
+  background: linear-gradient(90deg, #42a5f5, #00e676); /* Texto con degradado */
+  -webkit-background-clip: text;
+  color: transparent; /* Hace el texto visible solo con el degradado */
 }
 
 /* Detalles del card */
@@ -99,6 +101,7 @@
   font-weight: bold;
   font-size: 0.75rem;
   margin-top: 10px;
+  color: #76ff03; /* Cambiado a verde lima */
 }
 
 /* Estilo de las ondas de fondo */
@@ -137,8 +140,8 @@
 .experience-section {
   text-align: center;
   padding: 50px;
-  background: linear-gradient(38.73deg, rgba(204, 0, 187, 0.15) 0%, rgba(124, 9, 112, 0) 50%), 
-  linear-gradient(141.27deg, rgba(2, 65, 190, 0) 50%, rgba(10, 53, 141, 0.15) 100%);
+  background: linear-gradient(38.73deg, rgba(0, 184, 212, 0.15) 0%, rgba(255, 87, 34, 0) 50%), 
+  linear-gradient(141.27deg, rgba(0, 255, 234, 0) 50%, rgba(0, 150, 136, 0.15) 100%);
   color: #fff;
 }
 

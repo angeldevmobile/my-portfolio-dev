@@ -26,8 +26,8 @@
 
 @media (max-width: 768px) {
   .card {
-    width: 100%;
-    padding: 10px;
+    width: 95%;
+    padding: 5px;
   }
 
   .card__content {

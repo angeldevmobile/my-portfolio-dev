@@ -26,7 +26,8 @@
   width: 90%;
   max-width: 700px;
   z-index: 1000;
-  overflow: auto; /* Para permitir desplazamiento si el contenido excede el tamaño del modal */
+  max-height: 90vh; /* Limita la altura máxima del modal */
+  overflow-y: auto; /* Permite desplazamiento si el contenido excede el tamaño del modal */
 }
 
 .modal-content {
@@ -55,7 +56,7 @@
 .close {
   position: absolute;
   top: -25px;
-  left: 660px;
+  right: 1px; /* Ajuste para pantallas pequeñas */
   font-size: 24px;
   cursor: pointer;
 }
@@ -132,12 +133,19 @@
 
   .modal-image {
     height: 80px;
-    max-width: 100%;
+    max-width: 100%; /* Se adapta al ancho disponible */
+    height: auto; /* Mantiene la proporción de la imagen */
   }
 
   .modal-buttons .button {
     padding: 8px 18px;
   }
+}
+
+.member-links {
+  display: flex;
+  gap: 12px;
+  justify-content: center; /* Centra los íconos horizontalmente */
 }
 
 @media (max-width: 768px) {
@@ -148,6 +156,8 @@
 
   .modal-image {
     height: 70px;
+    max-width: 100%;
+    height: auto; /* Mantiene la proporción de la imagen */
   }
 
   .modal-text-content h2 {
@@ -171,9 +181,8 @@
   }
 
   .member-links {
-    padding-left: 0;
     margin-top: 10px;
-    justify-content: center;
+    justify-content: center; /* Asegura que los íconos se centren en pantallas pequeñas */
   }
 
   .tech-badge {
@@ -181,6 +190,7 @@
     font-size: 0.85rem;
   }
 }
+
 
 @media (max-width: 576px) {
   .modal {
@@ -190,6 +200,8 @@
 
   .modal-image {
     height: 60px;
+    max-width: 100%;
+    height: auto; /* Mantiene la proporción de la imagen */
   }
 
   .modal-text-content h2 {
@@ -212,6 +224,8 @@
 
   .modal-image {
     height: 50px;
+    max-width: 100%;
+    height: auto; /* Mantiene la proporción de la imagen */
   }
 
   .modal-text-content h2 {

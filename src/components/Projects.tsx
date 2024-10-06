@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
-import './css/Projects.css';
-import './css/modals.css';
-import Imagen1 from '../assets/Imagen_1.jpg';
-import Imagen2 from '../assets/web.png';
-import Imagen3 from '../assets/asistente_ia.png';
-import colaborator2 from '../assets/foto_web.jpg';
-import { FaLinkedin, FaGithub } from 'react-icons/fa';
+import React, { useState, useEffect } from "react";
+import "./css/Projects.css";
+import "./css/modals.css";
+import Imagen1 from "../assets/Imagen_1.jpg";
+import Imagen2 from "../assets/web.png";
+import Imagen3 from "../assets/asistente_ia.png";
+import colaborator2 from "../assets/foto_web.jpg";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 interface Projects {
   title: string;
@@ -14,66 +14,109 @@ interface Projects {
   image: string;
   collaborators: string[];
   technologies?: string[];
-  members?: { name: string; photo: string; github?: string; linkedin?: string }[];
+  members?: {
+    name: string;
+    photo: string;
+    github?: string;
+    linkedin?: string;
+  }[];
   codeUrl?: string;
 }
 
 const projects: Projects[] = [
   {
-    title: 'Personal Projects',
-    date: 'January 2021 - Present',
-    description: 'I develop mobile applications with Flutter and Dart, featuring attractive and intuitive interfaces (UI/UX) to provide the client with an exceptional navigation experience, always focused on the customer experience.',
+    title: "Personal Projects",
+    date: "January 2021 - Present",
+    description:
+      "I develop mobile applications with Flutter and Dart, featuring attractive and intuitive interfaces (UI/UX) to provide the client with an exceptional navigation experience, always focused on the customer experience.",
     image: Imagen1,
     collaborators: [colaborator2],
-    technologies: ['Flutter', 'Dart', 'Android', 'Firebase', 'Figma'],
+    technologies: ["Flutter", "Dart", "Android", "Firebase", "Figma"],
     members: [
       {
-        name: 'Gabriel Zapata',
+        name: "Gabriel Zapata",
         photo: colaborator2,
-        github: 'https://github.com/ALPHA0101010101001010101010101011010/shopping-econmerce-app',
-        linkedin: 'https://www.linkedin.com/in/gabriel-zapata-239501287/',
+        github:
+          "https://github.com/ALPHA0101010101001010101010101011010/shopping-econmerce-app",
+        linkedin: "https://www.linkedin.com/in/gabriel-zapata-239501287/",
       },
     ],
-    codeUrl: 'https://github.com/ALPHA0101010101001010101010101011010/shopping-econmerce-app',
+    codeUrl:
+      "https://github.com/ALPHA0101010101001010101010101011010/shopping-econmerce-app",
   },
   {
-    title: 'Portfolio and Web E-conmerce',
-    date: 'Apr 2021 - Present',
-    description: 'I developed an eCommerce website for online product sales, featuring various functionalities with access for both users and administrators, providing an incredible customer experience with all the details. Additionally, I carried out the development of a portfolio showcasing my knowledge and experiences.',
+    title: "Portfolio and Web E-commerce",
+    date: "Apr 2021 - Present",
+    description:
+      "I developed an eCommerce website for online product sales, featuring various functionalities with access for both users and administrators, providing an incredible customer experience with all the details. Additionally, I carried out the development of a portfolio showcasing my knowledge and experiences.",
     image: Imagen2,
     collaborators: [colaborator2],
-    technologies: ['HTML', 'CSS', 'Spring Boot', 'Node Js', 'Tailwinds', 'TypeScript', 'bootstrap'],
+    technologies: [
+      "HTML",
+      "CSS",
+      "Spring Boot",
+      "Node Js",
+      "Tailwinds",
+      "TypeScript",
+      "bootstrap",
+    ],
     members: [
       {
-        name: 'Gabriel Zapata',
+        name: "Gabriel Zapata",
         photo: colaborator2,
-        github: 'https://github.com/ALPHA0101010101001010101010101011010/my-portfolio-dev',
-        linkedin: 'https://www.linkedin.com/in/gabriel-zapata-239501287/',
+        github:
+          "https://github.com/ALPHA0101010101001010101010101011010/my-portfolio-dev",
+        linkedin: "https://www.linkedin.com/in/gabriel-zapata-239501287/",
       },
     ],
-    codeUrl: 'https://github.com/ALPHA0101010101001010101010101011010/my-portfolio-dev',
+    codeUrl:
+      "https://github.com/ALPHA0101010101001010101010101011010/my-portfolio-dev",
   },
   {
-    title: 'AI Assistant Virtual',
-    date: 'January 2024 - July 2024',
-    description: 'This project was developed with my team, where I had the role of developer to implement functionalities for reading and validating documents with AI, integrating the agent into a website where users can interact with it. To train it, data was fed through a data storage.',
+    title: "AI Assistant Virtual",
+    date: "January 2024 - July 2024",
+    description:
+      "This project was developed with my team, where I had the role of developer to implement functionalities for reading and validating documents with AI, integrating the agent into a website where users can interact with it. To train it, data was fed through a data storage.",
     image: Imagen3,
     collaborators: [colaborator2],
-    technologies: ['Python', 'Flask', 'Gemini', 'DocumentAI', 'Data Storage', 'APIs', 'LLMS'],
+    technologies: [
+      "Python",
+      "Flask",
+      "Gemini",
+      "DocumentAI",
+      "Data Storage",
+      "APIs",
+      "LLMS",
+    ],
     members: [
       {
-        name: 'Gabriel Zapata',
+        name: "Gabriel Zapata",
         photo: colaborator2,
-        github: 'https://github.com/ALPHA0101010101001010101010101011010',
-        linkedin: 'https://www.linkedin.com/in/gabriel-zapata-239501287/',
+        github: "https://github.com/ALPHA0101010101001010101010101011010",
+        linkedin: "https://www.linkedin.com/in/gabriel-zapata-239501287/",
       },
     ],
-    codeUrl: 'https://github.com/ALPHA0101010101001010101010101011010',
+    codeUrl: "https://github.com/ALPHA0101010101001010101010101011010",
   },
 ];
 
 const Project = () => {
   const [selectedProject, setSelectedProject] = useState<Projects | null>(null);
+
+  useEffect(() => {
+    // Deshabilitar el scroll cuando el modal esté abierto
+    if (selectedProject) {
+      document.body.style.overflow = "hidden";
+    } else {
+      // Habilitar el scroll cuando el modal esté cerrado
+      document.body.style.overflow = "auto";
+    }
+
+    // Limpiar el efecto al desmontar el componente
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [selectedProject]);
 
   const openModal = (project: Projects) => {
     setSelectedProject(project);
@@ -86,10 +129,16 @@ const Project = () => {
   return (
     <div className="projects">
       <h2>Projects</h2>
-      <p>I have worked on a wide range of projects. From web apps to android apps. Here are some of my projects.</p>
+      <p>
+        I have worked on a wide range of projects. From web apps to android
+        apps. Here are some of my projects.
+      </p>
       <div className="projects-grid">
         {projects.map((project, index) => (
-          <div className="project-card" key={index} onClick={() => openModal(project)}>
+          <div
+            className="project-card"
+            key={index}
+            onClick={() => openModal(project)}>
             <div className={`project-image-container container-${index}`}>
               <img
                 src={project.image}
@@ -100,7 +149,9 @@ const Project = () => {
             <div className="project-content">
               <h3>{project.title}</h3>
               <p className="project-date">{project.date}</p>
-              <p className="project-description" style={{fontSize:"13px"}}>{project.description}</p>
+              <p className="project-description" style={{ fontSize: "13px" }}>
+                {project.description}
+              </p>
               <div className="project-collaborators">
                 {project.collaborators.map((collaborator, idx) => (
                   <img
@@ -122,11 +173,17 @@ const Project = () => {
 
           <div className="modal">
             <div className="modal-content">
-              <span className="close" onClick={closeModal}>&times;</span>
+              <span className="close" onClick={closeModal}>
+                &times;
+              </span>
 
               {/* Imagen dentro de una tarjeta (card) para ajustar tamaño */}
               <div className="modal-card">
-                <img src={selectedProject.image} alt={selectedProject.title} className="modal-image" />
+                <img
+                  src={selectedProject.image}
+                  alt={selectedProject.title}
+                  className="modal-image"
+                />
               </div>
 
               {/* Nuevo contenedor para el texto */}
@@ -137,26 +194,57 @@ const Project = () => {
 
                 <div className="tech-container">
                   {selectedProject.technologies?.map((tech: string) => (
-                    <span key={tech} className="tech-badge">{tech}</span>
+                    <span key={tech} className="tech-badge">
+                      {tech}
+                    </span>
                   ))}
                 </div>
 
                 <h3>Members</h3>
                 <div className="members">
                   {selectedProject.members?.map((member: any) => (
-                    <div key={member.name} className="member" style={{ display: "flex", alignItems: "center" }}>
-                      <img src={member.photo} alt={member.name} className="member-photo" />
-                      <p className="nombre" style={{ marginLeft: "15px" }}>{member.name}</p>
-                      <div className="member-links" style={{ paddingLeft: "90px", display:"flex", gap:"12px"}}>
-                        {member.github && <a href={member.github}><FaGithub/></a>}
-                        {member.linkedin && <a href={member.linkedin}><FaLinkedin/></a>}
+                    <div
+                      key={member.name}
+                      className="member"
+                      style={{ display: "flex", alignItems: "center" }}>
+                      <img
+                        src={member.photo}
+                        alt={member.name}
+                        className="member-photo"
+                      />
+                      <p className="nombre" style={{ marginLeft: "15px", marginRight: "25px" }}>
+                        {member.name}
+                      </p>
+                      <div
+                        className="member-links"
+                        style={{
+                          display: "flex",
+                          gap: "12px",
+                          justifyContent: "center",
+                        }}>
+                        {member.github && (
+                          <a href={member.github}>
+                            <FaGithub />
+                          </a>
+                        )}
+                        {member.linkedin && (
+                          <a href={member.linkedin}>
+                            <FaLinkedin />
+                          </a>
+                        )}
                       </div>
                     </div>
                   ))}
                 </div>
 
                 <div className="modal-buttons">
-                  <a href={selectedProject.codeUrl} target="_blank" rel="noopener noreferrer" className="button">View Code</a>
+                  <a
+                    href={selectedProject.codeUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="button">
+                    View Code
+                  </a>
                 </div>
               </div>
               {/* Fin del nuevo contenedor para el texto */}
