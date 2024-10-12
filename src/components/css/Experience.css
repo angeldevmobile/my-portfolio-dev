@@ -23,12 +23,12 @@
 /* Estilo del card */
 .e-card {
   position: relative;
-  background: linear-gradient(145deg, #0d47a1, #42a5f5); /* Fondo con degradado */
   box-shadow: 0px 8px 28px -9px rgba(0, 229, 255, 0.45); /* Sombra más vibrante */
   border-radius: 16px;
   padding: 20px;
   overflow: hidden;
   z-index: 1;
+  border: 0.1px solid rgb(48, 110, 232);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -45,11 +45,11 @@
 
 /* Estilo del icono dentro del card */
 .experience-icon img {
-  width: 90px;
-  height: 60px;
+  width: 140px;
+  height: 90px;
   margin-bottom: 10px;
-  border-radius: 100px;
-  background: white;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.5);
   padding: 5px;
 }
 
@@ -59,15 +59,15 @@
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 10px;
-  background: linear-gradient(90deg, #42a5f5, #00e676); /* Texto con degradado */
   -webkit-background-clip: text;
-  color: transparent; /* Hace el texto visible solo con el degradado */
+  color: #e0f2fe; /* Azul muy claro para buen contraste con el fondo */
+  background: none; /* Evita el degradado para que el texto sea más fácil de leer */
 }
 
 /* Detalles del card */
 .experience-details {
   text-align: left;
-  color: #fff;
+  color: #f3f4f6; /* Blanco suave */
   margin-top: 10px;
 }
 
@@ -101,7 +101,7 @@
   font-weight: bold;
   font-size: 0.75rem;
   margin-top: 10px;
-  color: #76ff03; /* Cambiado a verde lima */
+  color: #e0f2fe; /* Un azul claro que complementa el esquema de colores *//* Cambiado a verde lima */
 }
 
 /* Estilo de las ondas de fondo */
@@ -140,10 +140,14 @@
 .experience-section {
   text-align: center;
   padding: 50px;
-  background: linear-gradient(38.73deg, rgba(0, 184, 212, 0.15) 0%, rgba(255, 87, 34, 0) 50%), 
-  linear-gradient(141.27deg, rgba(0, 255, 234, 0) 50%, rgba(0, 150, 136, 0.15) 100%);
   color: #fff;
+  background: rgb(28, 28, 39); /* Color sólido inicial que aparecerá detrás */
+  background: 
+    linear-gradient(38.73deg, rgba(204, 0, 187, 0.15) 0%, rgba(201, 32, 184, 0) 50%), /* Primer degradado (púrpura) */
+    linear-gradient(141.27deg, rgba(0, 70, 209, 0) 50%, rgba(0, 70, 209, 0.15) 100%), /* Segundo degradado (azul) */
+    rgb(28, 28, 39); /* Color base detrás de los gradientes */
 }
+
 
 /* Título de la sección */
 h2 {

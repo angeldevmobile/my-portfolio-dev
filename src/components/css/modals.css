@@ -35,6 +35,8 @@
 }
 
 .modal-card {
+  height: auto;
+  width: 95%;
   background-color: rgb(23, 23, 33);
   padding: 10px;
   border-radius: 10px;
@@ -44,8 +46,8 @@
 }
 
 .modal-image {
-  height: 100px;
-  width: 250px;
+  height: 150px;
+  width: 300px;
   max-width: 400px;
   border-radius: 10px;
   object-fit: cover;
@@ -72,11 +74,13 @@
 }
 
 .modal-buttons {
-  margin-top: 20px;
+  margin-top: -30px;
   display: flex;
   justify-content: center;
 }
-
+::-webkit-scrollbar {
+  display: none; /* Oculta la barra de desplazamiento en Chrome/Safari */
+}
 .modal-buttons .button {
   padding: 10px 20px;
   text-align: center;

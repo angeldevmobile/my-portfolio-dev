@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./css/Projects.css";
 import "./css/modals.css";
-import Imagen1 from "../assets/Imagen_1.jpg";
+import Imagen1 from "../assets/ux_ui.png";
 import Imagen2 from "../assets/web.png";
 import Imagen3 from "../assets/asistente_ia.png";
 import colaborator2 from "../assets/foto_web.jpg";
@@ -139,11 +139,11 @@ const Project = () => {
             className="project-card"
             key={index}
             onClick={() => openModal(project)}>
-            <div className={`project-image-container container-${index}`}>
+            <div className="project-image-container">
               <img
                 src={project.image}
                 alt={project.title}
-                className={`project-image image-${index}`}
+                className="project-image"
               />
             </div>
             <div className="project-content">
@@ -177,7 +177,6 @@ const Project = () => {
                 &times;
               </span>
 
-              {/* Imagen dentro de una tarjeta (card) para ajustar tamaño */}
               <div className="modal-card">
                 <img
                   src={selectedProject.image}
@@ -186,7 +185,6 @@ const Project = () => {
                 />
               </div>
 
-              {/* Nuevo contenedor para el texto */}
               <div className="modal-text-content">
                 <h2>{selectedProject.title}</h2>
                 <p>{selectedProject.date}</p>
@@ -212,7 +210,9 @@ const Project = () => {
                         alt={member.name}
                         className="member-photo"
                       />
-                      <p className="nombre" style={{ marginLeft: "15px", marginRight: "25px" }}>
+                      <p
+                        className="nombre"
+                        style={{ marginLeft: "15px", marginRight: "25px" }}>
                         {member.name}
                       </p>
                       <div
@@ -247,7 +247,6 @@ const Project = () => {
                   </a>
                 </div>
               </div>
-              {/* Fin del nuevo contenedor para el texto */}
             </div>
           </div>
         </>

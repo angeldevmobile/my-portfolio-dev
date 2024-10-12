@@ -1,7 +1,7 @@
 import './css/Experience.css'; 
-import frontend from "../assets/front.jpeg";
-import backend from "../assets/backend.jpeg";
-import automation from "../assets/automation.jpeg";
+import frontend from "../assets/front_end.gif";
+import backend from "../assets/backend.gif";
+import automation from "../assets/automation.gif";
 
 const experiences = [
   {
