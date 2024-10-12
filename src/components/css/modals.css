@@ -35,6 +35,7 @@
 }
 
 .modal-card {
+  margin-top: 10px;
   height: auto;
   width: 95%;
   background-color: rgb(23, 23, 33);
@@ -57,7 +58,7 @@
 
 .close {
   position: absolute;
-  top: -25px;
+  top: -20px;
   right: 1px; /* Ajuste para pantallas pequeñas */
   font-size: 24px;
   cursor: pointer;
@@ -217,6 +218,7 @@
   }
 
   .modal-buttons .button {
+    margin-top: 30px;
     padding: 6px 16px;
   }
 }
