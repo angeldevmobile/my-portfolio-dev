@@ -37,12 +37,12 @@ const projects: Projects[] = [
         name: "Gabriel Zapata",
         photo: colaborator2,
         github:
-          "https://github.com/ALPHA0101010101001010101010101011010/shopping-econmerce-app",
+          "https://github.com/angeldevmobile/shopping-econmerce-app",
         linkedin: "https://www.linkedin.com/in/gabriel-zapata-239501287/",
       },
     ],
     codeUrl:
-      "https://github.com/ALPHA0101010101001010101010101011010/shopping-econmerce-app",
+      "https://github.com/angeldevmobile/shopping-econmerce-app",
   },
   {
     title: "Portfolio and Web E-commerce",
@@ -65,12 +65,12 @@ const projects: Projects[] = [
         name: "Gabriel Zapata",
         photo: colaborator2,
         github:
-          "https://github.com/ALPHA0101010101001010101010101011010/my-portfolio-dev",
+          "https://github.com/angeldevmobile/my-portfolio-dev",
         linkedin: "https://www.linkedin.com/in/gabriel-zapata-239501287/",
       },
     ],
     codeUrl:
-      "https://github.com/ALPHA0101010101001010101010101011010/my-portfolio-dev",
+      "https://github.com/angeldevmobile/my-portfolio-dev",
   },
   {
     title: "AI Assistant Virtual",
@@ -92,11 +92,11 @@ const projects: Projects[] = [
       {
         name: "Gabriel Zapata",
         photo: colaborator2,
-        github: "https://github.com/ALPHA0101010101001010101010101011010",
+        github: "https://github.com/angeldevmobile",
         linkedin: "https://www.linkedin.com/in/gabriel-zapata-239501287/",
       },
     ],
-    codeUrl: "https://github.com/ALPHA0101010101001010101010101011010",
+    codeUrl: "https://github.com/angeldevmobile",
   },
 ];
 

@@ -82,7 +82,7 @@ const Header: React.FC<HeaderProps> = ({ setCurrentSection }) => {
       </nav>
       {/* Botón de GitHub siempre a la derecha */}
       <a
-        href="https://github.com/ALPHA0101010101001010101010101011010"
+        href="https://github.com/angeldevmobile"
         className="px-4 py-2 ml-auto text-white border rounded border-purple hover:bg-purple"
       >
         Github Profile
