@@ -25,7 +25,7 @@ const Contact: React.FC = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch("/api/send-email", {
+      const response = await fetch("/functions/send-email", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
