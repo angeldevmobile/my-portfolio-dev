@@ -1,8 +1,8 @@
 // Header.tsx
 import React, { useState } from "react";
-import { FaBars, FaTimes } from "react-icons/fa"; // Importa iconos para el menú
-import { CSSTransition } from "react-transition-group"; // Importar CSSTransition
-import './css/header.css'; // Importa el archivo CSS para estilos y transiciones
+import { FaBars, FaTimes } from "react-icons/fa"; 
+import { CSSTransition } from "react-transition-group"; 
+import './css/header.css'; 
 
 interface HeaderProps {
   setCurrentSection: (section: string) => void; // función para cambiar la sección visible
